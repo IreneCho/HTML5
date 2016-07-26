@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+/*	#mydiv+div:active{
+	color:red;
+	}
+*/
+
+	#mydiv:hover{
+	color:red; font-size: 20pt;
+	}
+	
+	[type="checkbox"]:checked{
+	width: 20px; height: 20px;
+	}
+	
+	[name="grade"]:checked{
+	width: 50px; height: 50px;
+	}
+</style>
+</head>
+<body>
+	<fieldset>
+			<legend>학년</legend>
+			<input id="first" name="grade" type="radio">
+			<label for="first" >1학년</label><br>
+			<input id="second" name="grade" type="radio">
+			<label for="seocond">2학년</label><br>
+			<input id="third" name="grade" type="radio">
+			<label for="third">3학년</label><br>
+		</fieldset>
+
+	<input id="std" type="checkbox"><lavel for="std">학생</lavel><br>
+	<input id="office" type="checkbox"><lavel for="office">직장</lavel><br>
+	<div id="mydiv">테스트1</div>
+	<div>테스트2</div>
+	<div>테스트3</div>
+</body>
+</html>

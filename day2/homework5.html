@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+	
+	[name="clientinfo"]:focus{
+	background-color: yellow;
+	}
+
+</style>
+</head>
+<body>
+	<form>
+		<fieldset>
+				<div>
+					<label for="name">고객명: </label>
+					<input id="name" name="clientinfo" type="text"><br>
+					<label for="tell">전화번호: </label>
+					<input id="tell" name="clientinfo" type="number"><br>
+					<label for="email">email: </label>
+					<input id="eamil" name="clientinfo" type="email"><br>
+				</div>
+			
+			<fieldset>
+			<legend>피자 사이즈</legend>
+			<div>
+				<div>
+					<input id="small" name="size" type="radio">
+				    <label for="small">SMALL</label><br>
+				    <input id="medium" name="size" type="radio">
+				    <label for="medium">MEDIUM</label><br>
+				    <input id="large" name="size" type="radio">
+				    <label for="large">LARGE</label><br>
+				</div>
+			</div>
+		</fieldset>
+		
+		<fieldset>
+		<legend>토핑 선택</legend>
+			<div>
+				<div>
+					<input type="checkbox" id="beacon" name="topping"><label for="beacon">베이컨</label><br> 
+					<input type="checkbox" id="cheeze" name="topping"><label for="cheeze">치즈</label><br>
+					<input type="checkbox" id="onion" name="topping"><label for="onion">양파</label><br>
+					<input type="checkbox" id="mushroom" name="topping"><label for="mushroom">버섯</label><br>
+				</div>
+			</div>
+		</fieldset>
+		<div>
+					<label for="time">희망배송시간: </label>
+					<input id="time" name="time" type="time" min="10:00" max="22:00"><br>
+					<label for="request">배송시요청사항: </label>
+					<textarea name="clientinfo"></textarea><br>
+				</div>
+			
+			<div>
+				<button>주문하기</button>
+			</div>
+			
+		
+		</fieldset>
+	</form>
+
+</body>
+</html>
