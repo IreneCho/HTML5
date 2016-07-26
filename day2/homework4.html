@@ -5,6 +5,116 @@
 <title>Insert title here</title>
 </head>
 <body>
-수정하겠습니다
+	<section>
+		<h1>1번째 문제 (ppt 128)</h1>
+		<form>
+			<fieldset>
+				<legend>납품자정보</legend>
+				<div>
+					<div>
+						<label for="name">1. 납품자명: </label>
+					</div>
+					<div>
+						<input id="name" name="name" type="text" placeholder="NAME"
+							required="">
+					</div>
+				</div>
+				<div>
+					<div>
+						<label for="email">2. Email: </label>
+					</div>
+					<div>
+						<input id="email" name="email" type="email"
+							placeholder="email@example.com" required="">
+					</div>
+				</div>
+				<div>
+					<div>
+						<label for="website">3. 홈페이지: </label>
+					</div>
+					<div>
+						<input id="website" name="website" type="url"
+							placeholder="http://www.example.com" required="">
+					</div>
+				</div>
+			</fieldset>
+			<div>
+				<input type="submit" value="클릭">
+			</div>
+		</form>
+	</section>
+	<section>
+		<h1>2번째 문제 (ppt 130)</h1>
+		<form>
+			<fieldset>
+				<legend>납품정보</legend>
+				<div>
+					<div>
+						<label for="name">1. 상품명: </label>
+					</div>
+					<div>
+						<input id="name" name="name" type="text" list="product">
+					</div>
+					<datalist id="product">
+						<option value="도그1004">도그1004</option>
+						<option value="퍼피팝">퍼피팝</option>
+						<option value="유기농껌">유기농껌</option>
+					</datalist>
+				</div>
+				<div>
+					<div>
+						<label for="email">2. 납품수량: </label>
+					</div>
+					<div>
+						<input id="count" name="count" type="number" min="10" max="100"
+							step="10" placeholder="최소 10 이상">
+					</div>
+				</div>
+				<div>
+					<div>
+						<label for="grade">3. 납품등급:최고등급10</label>
+					</div>
+					<div>
+						<input id="grade" name="grade" type="range" min="0" max="10"
+							step="2">
+					</div>
+				</div>
+				<div>
+					<div>
+						<label for="etc">4. 기타사항:</label>
+					</div>
+					<div>
+						<textarea rows="10" cols="15" id="etc" name="etc" required=""></textarea>
+					</div>
+				</div>
+			</fieldset>
+			<div>
+				<input type="submit" value="클릭">
+			</div>
+		</form>
+	</section>
+
+	<section>
+		<h1>3번째 문제</h1>
+		<form>
+			<div>
+				<label for="name">이름</label> <input id="name" type="text">
+			</div>
+			<div>
+				<label>성별</label> <input id="man" name="gender" type="radio">
+				<label for="man">남성</label> <input id="woman" name="gender"
+					type="radio"> <label for="woman">여성</label>
+			</div>
+			<div>
+				<label>취미</label> <input type="checkbox" id="a" name="a"><label
+					for="a">취미</label> <input type="checkbox" id="b" name="b"><label
+					for="b">음악</label> <input type="checkbox" id="c" name="c"><label
+					for="c">개발</label>
+			</div>
+			<div>
+				<input type="submit" value="클릭">
+			</div>
+		</form>
+	</section>
 </body>
 </html>
